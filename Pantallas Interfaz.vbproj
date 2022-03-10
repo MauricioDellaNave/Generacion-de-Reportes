@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{56B5F55C-C853-4152-BE10-657EAC103445}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sistema_de_Gestion_Tecnica.My.MyApplication</StartupObject>
+    <RootNamespace>Sistema_de_Gestion_Tecnica</RootNamespace>
+    <AssemblyName>Sistema de Gestion Tecnica</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Sistema de Gestion Tecnica.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Sistema de Gestion Tecnica.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClassLibrary1, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ControlUsuario\ClassLibrary1\bin\Release\ClassLibrary1.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.Localization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\System32\Core.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="CRDB_ADOPLUS, Version=14.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Archivos de programa\SAP BusinessObjects\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CRDB_ADOPLUS.DLL</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="Microsoft.Office.Interop.InfoPath.Xml, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Archivos de programa\Microsoft Office\Office12\Microsoft.Office.Interop.InfoPath.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\..\..\..\..\Archivos de programa\Microsoft Visual Studio 10.0\ReportViewer\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CapaAccesoDatos" />
+    <Import Include="CapaNegocio" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="MenuPrincipal.Designer.vb">
+      <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sin Conexion.Designer.vb">
+      <DependentUpon>Sin Conexion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sin Conexion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Jobs\FrmHistorial.Designer.vb">
+      <DependentUpon>FrmHistorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Jobs\FrmHistorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Jobs\FrmReporte.Designer.vb">
+      <DependentUpon>FrmReporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Jobs\FrmReporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Jobs\ReportHistorico.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportHistorico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sistema\Jobs\ReportIngreso.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportIngreso.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sistema\Jobs\DsFormReparaciones.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsFormReparaciones.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Jobs\DsFormReparaciones.vb">
+      <DependentUpon>DsFormReparaciones.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Jobs\DsIngreso.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsIngreso.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Jobs\DsIngreso.vb">
+      <DependentUpon>DsIngreso.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Jobs\ReporteSalida.Designer.vb">
+      <DependentUpon>ReporteSalida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Jobs\ReporteSalida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ABM\ABMProductos.Designer.vb">
+      <DependentUpon>ABMProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ABM\ABMProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ABM\FormProductos.Designer.vb">
+      <DependentUpon>FormProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ABM\FormProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Jobs\ListarReporteSalida.Designer.vb">
+      <DependentUpon>ListarReporteSalida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Jobs\ListarReporteSalida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Jobs\GenerarJobs.Designer.vb">
+      <DependentUpon>GenerarJobs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Jobs\GenerarJobs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Usuarios\ABMUsuarios.designer.vb">
+      <DependentUpon>ABMUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\ABMUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\CambiarClave.Designer.vb">
+      <DependentUpon>CambiarClave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\CambiarClave.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\ModificarUsuario.designer.vb">
+      <DependentUpon>ModificarUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\ModificarUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VariablesGlobales.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Login.en-US.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.en.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.es.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.pt-BR.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.pt.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.en.resx">
+      <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.es-AR.resx">
+      <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.es-CO.resx">
+      <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.es.resx">
+      <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.pt.resx">
+      <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sin Conexion.resx">
+      <DependentUpon>Sin Conexion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\ABMProductos.en.resx">
+      <DependentUpon>ABMProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\ABMProductos.es.resx">
+      <DependentUpon>ABMProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\FormProductos.en.resx">
+      <DependentUpon>FormProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\FormProductos.es.resx">
+      <DependentUpon>FormProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Jobs\FrmHistorial.resx">
+      <DependentUpon>FrmHistorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Jobs\ListarReporteSalida.es-AR.resx">
+      <DependentUpon>ListarReporteSalida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Jobs\ReporteSalida.en.resx">
+      <DependentUpon>ReporteSalida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Jobs\ReporteSalida.es.resx">
+      <DependentUpon>ReporteSalida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Jobs\ListarReporteSalida.en.resx">
+      <DependentUpon>ListarReporteSalida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Jobs\ListarReporteSalida.es.resx">
+      <DependentUpon>ListarReporteSalida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Jobs\FrmReporte.resx">
+      <DependentUpon>FrmReporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Jobs\GenerarJobs.en.resx">
+      <DependentUpon>GenerarJobs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Jobs\GenerarJobs.es-AR.resx">
+      <DependentUpon>GenerarJobs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Jobs\GenerarJobs.es.resx">
+      <DependentUpon>GenerarJobs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Jobs\ReportHistorico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportHistorico.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Jobs\ReportIngreso.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportIngreso.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Jobs\ReporteSalida.resx">
+      <DependentUpon>ReporteSalida.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="My Project\app.manifest" />
+    <None Include="Sistema\Jobs\DsFormReparaciones.xsc">
+      <DependentUpon>DsFormReparaciones.xsd</DependentUpon>
+    </None>
+    <None Include="Sistema\Jobs\DsFormReparaciones.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsFormReparaciones.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Sistema\Jobs\DsFormReparaciones.xss">
+      <DependentUpon>DsFormReparaciones.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Sistema\ABM\ABMProductos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ABMProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\FormProductos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Jobs\ListarReporteSalida.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListarReporteSalida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Jobs\GenerarJobs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GenerarJobs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\ABMUsuarios.en.resx">
+      <DependentUpon>ABMUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\ABMUsuarios.es.resx">
+      <DependentUpon>ABMUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\ABMUsuarios.pt.resx">
+      <DependentUpon>ABMUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\ABMUsuarios.resx">
+      <DependentUpon>ABMUsuarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\CambiarClave.resx">
+      <DependentUpon>CambiarClave.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\ModificarUsuario.en.resx">
+      <DependentUpon>ModificarUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\ModificarUsuario.es.resx">
+      <DependentUpon>ModificarUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\ModificarUsuario.resx">
+      <DependentUpon>ModificarUsuario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.config" />
+    <None Include="Resources\user.jpg" />
+    <None Include="Resources\Sobres.jpg" />
+    <None Include="Resources\Logo-Correo-chico.JPG" />
+    <None Include="Resources\Logo-Correo.JPG" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Sistema\Jobs\DsIngreso.xsc">
+      <DependentUpon>DsIngreso.xsd</DependentUpon>
+    </None>
+    <None Include="Sistema\Jobs\DsIngreso.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsIngreso.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Sistema\Jobs\DsIngreso.xss">
+      <DependentUpon>DsIngreso.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaAccesoDatos\Acceso a Datos.vbproj">
+      <Project>{85EE59DC-9018-4BD0-BF02-3FEFC4BE3A12}</Project>
+      <Name>Acceso a Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio\Negocio.vbproj">
+      <Project>{B833B7D4-A625-4E6E-ADDB-70D4BEB842CF}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuarios.jpg" />
+    <None Include="Resources\Desconectado.jpg" />
+    <None Include="Resources\LogoEcadat.jpg" />
+    <None Include="Resources\logoIntermec.jpg" />
+    <None Include="Resources\logo-Sistema1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
